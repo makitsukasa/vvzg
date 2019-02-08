@@ -1,5 +1,3 @@
-hoge\.*
-
 # https://qiita.com/cs1000/items/07368892a599b2b7b836
 # https://github.com/github/gitignore/blob/master/Unity.gitignore
 
@@ -54,3 +52,11 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# my settings
+hoge\.*
+Assets/HeadPoseEstimation/shape_predictor_68_face_landmarks\.dat
+Assets/HeadPoseEstimation/__pycache__/*
+Assets/HeadPoseEstimation/__pycache__/*\.meta
+Assets/HeadPoseEstimation/__pycache__\.meta
+Assets/HeadPoseEstimation/__pycache__\.meta
