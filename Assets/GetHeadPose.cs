@@ -29,10 +29,8 @@ public class GetHeadPose : MonoBehaviour {
         //非同期で出力の読み取りを開始
         p.BeginOutputReadLine();
 
-        p.WaitForExit();
-        p.Close();
-
-		Debug.Log("closed");
+        // p.WaitForExit();
+        // p.Close();
     }
 
     //OutputDataReceivedイベントハンドラ
