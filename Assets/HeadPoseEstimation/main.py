@@ -28,9 +28,6 @@ PREDICTOR = dlib.shape_predictor(PREDICTOR_PATH)
 
 VIDEO_INPUT = cv2.VideoCapture(0)
 
-IMG = cv2.imread("Assets/vzg.png", cv2.IMREAD_UNCHANGED)
-IMG_HEIGHT, IMG_WIDTH, _ = IMG.shape
-
 while VIDEO_INPUT.isOpened():
 	_, input_frame = VIDEO_INPUT.read()
 
