@@ -55,8 +55,11 @@ crashlytics-build.properties
 
 # my settings
 hoge\.*
+
 Assets/HeadPoseEstimation/shape_predictor_68_face_landmarks\.dat
 Assets/HeadPoseEstimation/__pycache__/*
 Assets/HeadPoseEstimation/__pycache__/*\.meta
 Assets/HeadPoseEstimation/__pycache__\.meta
 Assets/HeadPoseEstimation/__pycache__\.meta
+
+\.vscode/settings\.json
