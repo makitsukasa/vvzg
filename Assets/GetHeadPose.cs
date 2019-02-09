@@ -52,7 +52,7 @@ public class GetHeadPose : MonoBehaviour {
 				.Select(x => float.Parse(x))
 				.ToArray();
 			arr[1] = (arr[1] + 180) % 360;
-			arr[2] = (arr[2] + 180) % 360;
+			arr[2] = -(arr[2] + 180) % 360;
 			eulerAngles = new Vector3(arr[0], arr[1], arr[2]);
 		}
 		catch(System.Exception){
