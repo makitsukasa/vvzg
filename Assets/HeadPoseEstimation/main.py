@@ -48,7 +48,7 @@ while VIDEO_INPUT.isOpened():
 
 	for det in dets:
 		shape = PREDICTOR(input_frame, det)
-		euler_angles, p1, p2 = get_angles(shape)
+		euler_angles = get_angles(shape)
 		print(euler_angles, flush = True)
 
 	cv2.waitKey(30)
