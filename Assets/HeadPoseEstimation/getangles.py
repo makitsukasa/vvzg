@@ -35,7 +35,7 @@ def get_angles(face_shape):
 	], dtype = "double")
 
 	dist_coeffs = np.zeros((4, 1)) # Assuming no lens distortion
-	(_, rotation_vector, translation_vector) = cv2.solvePnP(model_points, image_points, camera_matrix, dist_coeffs)
+	_, rotation_vector, _ = cv2.solvePnP(model_points, image_points, camera_matrix, dist_coeffs)
 
 	rotation_matrix, _ = cv2.Rodrigues(rotation_vector)
 	proj_matrix = np.zeros(12).reshape((3, 4))
