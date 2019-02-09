@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -51,6 +51,7 @@ public class GetHeadPose : MonoBehaviour {
 				.Split(',')
 				.Select(x => float.Parse(x))
 				.ToArray();
+			arr[0] -= 9; // related to webcamera angle
 			arr[1] = (arr[1] + 180) % 360;
 			arr[2] = -(arr[2] + 180) % 360;
 			eulerAngles = new Vector3(arr[0], arr[1], arr[2]);
