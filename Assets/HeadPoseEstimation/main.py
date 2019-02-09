@@ -51,7 +51,7 @@ while VIDEO_INPUT.isOpened():
 		euler_angles, p1, p2 = get_angles(shape)
 		print(euler_angles, flush = True)
 
-	cv2.waitKey(10)
+	cv2.waitKey(30)
 
 linecache.clearcache()
 VIDEO_INPUT.release()
